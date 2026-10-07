@@ -1,0 +1,8 @@
+node_modules/
+dist/
+# Third-party research material (manuals, original program files, reviews) — NOT redistributed.
+# See docs/PROVENANCE.md for the URLs.
+research-sources/
+.DS_Store
+*.log
+.claude/

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrakMC</title>
+  <meta name="description" content="FrakMC: an independent browser-based fractal music composer. Mandelbrot and Julia sets become multi-channel MIDI music, played on your own synthesizers through Web MIDI. Informed by research into Hugh McDowell's Fractal Music Composer 2 (Atari ST); not an official port.">
+  <link rel="canonical" href="https://frakmc.allmyfriendsaresynths.com/">
+  <meta property="og:title" content="FrakMC">
+  <meta property="og:description" content="Fractal music composition in the browser, with Web MIDI.">
+  <meta property="og:url" content="https://frakmc.allmyfriendsaresynths.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fff'/%3E%3Cpath d='M3 8a3 3 0 1 0 6 0a3 3 0 1 0-6 0M9 8h2M11 6l3 2-3 2' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div id="app">
+    <nav id="menubar" aria-label="Menu bar"></nav>
+    <main id="stage-wrap">
+      <div id="stage" role="application" aria-label="FrakMC screen">
+        <canvas id="plot" aria-hidden="true"></canvas>
+        <canvas id="overlay" aria-hidden="true"></canvas>
+        <div id="layer"></div>
+      </div>
+    </main>
+    <aside id="monitor" aria-label="MIDI monitor"></aside>
+    <footer id="statusbar"></footer>
+  </div>
+  <noscript>FrakMC needs JavaScript.</noscript>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
